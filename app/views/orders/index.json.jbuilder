@@ -1,0 +1,9 @@
+json.order @orders do |order|
+  json.id order.id
+  json.first_name order.first_name
+  json.last_name order.last_name
+  json.email order.email
+  json.credit_card order.credit_card
+  json.expiration_date order.exp
+  json.status order.status
+end
