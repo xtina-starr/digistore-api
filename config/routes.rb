@@ -1,10 +1,14 @@
 Digistore::Application.routes.draw do
 
   defaults format: :json do
-    get "/products", to: "products#index"
-    get "/orders",   to: "orders#index"
-    get "/carts",    to: "carts#index"
-    get "/items",    to: "items#index"
+    get "/products",     to: "products#index"
+    get "/products/:id", to: "products#show"
+    get "/orders",       to: "orders#index"
+    get "/orders",       to: "orders#show"
+    get "/carts",        to: "carts#index"
+    get "/carts/:id",    to: "carts#show"
+    get "/items",        to: "items#index"
+    get "/items/:id",    to: "items#show"
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
