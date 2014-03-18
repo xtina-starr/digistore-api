@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20140318190835) do
   enable_extension "plpgsql"
 
   create_table "carts", force: true do |t|
-    t.integer  "order_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,6 +38,7 @@ ActiveRecord::Schema.define(version: 20140318190835) do
     t.integer  "cvv"
     t.string   "exp"
     t.string   "status"
+    t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -8,6 +8,7 @@ class CreateOrders < ActiveRecord::Migration
       t.integer :cvv
       t.string :exp
       t.string :status
+      t.integer :cart_id
 
       t.timestamps
     end
