@@ -11,5 +11,6 @@ class CartsController < ApplicationController
   def create
     @cart = Cart.new
     @cart.save
+    render "show"
   end
 end

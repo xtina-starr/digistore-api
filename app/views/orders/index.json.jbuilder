@@ -6,4 +6,5 @@ json.order @orders do |order|
   json.credit_card order.credit_card
   json.expiration_date order.exp
   json.status order.status
+  json.cart order.cart_id
 end
