@@ -2,6 +2,7 @@ Digistore::Application.routes.draw do
 
   defaults format: :json do
     get "/products",     to: "products#index"
+    post "/products",    to: "products#create"
     get "/products/:id", to: "products#show"
     get "/orders",       to: "orders#index"
     get "/orders",       to: "orders#show"
