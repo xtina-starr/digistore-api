@@ -3,10 +3,11 @@ Digistore::Application.routes.draw do
   defaults format: :json do
     get "/products",          to: "products#index"
     post "/products",         to: "products#create"
-    put "/products/:id",    to: "products#update"
+    put "/products/:id",      to: "products#update"
     delete "/products/:id",   to: "products#destroy"
     get "/products/:id",      to: "products#show"
     get "/orders",            to: "orders#index"
+    post "/orders",           to: "orders#create"
     get "/orders",            to: "orders#show"
     get "/carts",             to: "carts#index"
     post "/carts",            to: "carts#create"
@@ -14,7 +15,7 @@ Digistore::Application.routes.draw do
     get "/items",             to: "items#index"
     post "/items",            to: "items#create"
     get "/items/:id",         to: "items#show"
-    put "/items/:id",       to: "items#update"
+    put "/items/:id",         to: "items#update"
     delete "/items/:id",      to: "items#destroy"
   end
   # The priority is based upon order of creation: first created -> highest priority.
