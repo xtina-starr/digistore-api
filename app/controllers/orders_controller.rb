@@ -14,8 +14,8 @@ class OrdersController < ApplicationController
       status: order_params[:status],
       cart_id: order_params[:cart]
       )
-
     render "show"
+    OrderMailer.confirmation_email(@order).deliver
   end
 
   def show

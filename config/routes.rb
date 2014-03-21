@@ -8,7 +8,7 @@ Digistore::Application.routes.draw do
     get "/products/:id",      to: "products#show"
     get "/orders",            to: "orders#index"
     post "/orders",           to: "orders#create"
-    get "/orders",            to: "orders#show"
+    get "/orders/:id",            to: "orders#show"
     get "/carts",             to: "carts#index"
     post "/carts",            to: "carts#create"
     get "/carts/:id",         to: "carts#show"
