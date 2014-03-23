@@ -1,7 +1,11 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = Product.all
+    if params[:popular]
+      @products = Popular.new.jams
+    else
+      @products = Product.all
+    end
   end
 
   def show
