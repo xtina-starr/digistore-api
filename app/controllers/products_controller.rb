@@ -2,7 +2,8 @@ class ProductsController < ApplicationController
 
   def index
     if params[:popular]
-      @products = Popular.new.jams
+      Popular.get_popular_songs
+      @products = Product.display_popular_jams
     else
       @products = Product.all
     end
