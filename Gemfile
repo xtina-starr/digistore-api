@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.3'
 gem "rack-cors"
 gem "figaro"
+gem "httparty"
 
 # Use postgresql as the database for Active Record
 gem 'pg'
